@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#105090"
+    tools:context=".SomeSettingsActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/chbLastWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tvLastWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="21dp"
+            android:text="@string/check_box"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btnWriteDBOnSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/write_db_to_Sdcard" />
+
+        <Button
+            android:id="@+id/btnReadDBFromSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/btnWriteDBOnSD"
+            android:layout_below="@+id/btnWriteDBOnSD"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/read_db_from_SDcard" />
+
+        <Button
+            android:id="@+id/btnDeleteAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnReadDBFromSD"
+            android:layout_alignRight="@+id/btnReadDBFromSD"
+            android:layout_below="@+id/btnReadDBFromSD"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/delete_all_words" />
+
+    </RelativeLayout>
+
+</LinearLayout>

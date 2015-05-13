@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListActivity" >
+
+    <ListView
+        android:id="@+id/lvWordsList"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_above="@+id/linLayEn"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pbSearch"
+        android:layout_gravity="bottom"
+        android:dividerHeight="2dp" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnFormEnRus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="bottom"
+        android:text="@string/en_rus" />
+
+    <LinearLayout
+        android:id="@+id/linLayEn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFormEnRus"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:id="@+id/btnFormEn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/en" />
+
+        <Button
+            android:id="@+id/btnFormRus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rus" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/search" >
+
+        <requestFocus />
+    </EditText>
+
+    <ProgressBar
+        android:id="@+id/pbSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="86dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

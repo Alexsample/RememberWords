@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity" >
+
+    <EditText
+        android:id="@+id/etFormWord"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/word" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etFormDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etFormWord"
+        android:ems="10"
+        android:hint="@string/description" />
+
+    <EditText
+        android:id="@+id/etFormTranslation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etFormDescription"
+        android:ems="10"
+        android:hint="@string/translation" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etFormTranslation"
+        android:layout_centerInParent="true" >
+
+        <Button
+            android:id="@+id/btnFormOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_word" />
+
+        <Button
+            android:id="@+id/btnFormCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+
+</RelativeLayout>

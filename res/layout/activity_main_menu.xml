@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rememberwords.MainMenuActivity"
+    android:background="@drawable/main_color" >
+
+    <Button
+        android:id="@+id/btnWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSettings"
+        android:layout_alignLeft="@+id/btnSettings"
+        android:layout_alignRight="@+id/btnSettings"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/main_menu_selector"
+        android:text="@string/button_words"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/main_menu_selector"
+        android:text="@string/button_settings"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSettings"
+        android:layout_alignRight="@+id/btnSettings"
+        android:layout_below="@+id/btnSettings"
+        android:background="@drawable/main_menu_selector"
+        android:text="@string/button_exit"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
